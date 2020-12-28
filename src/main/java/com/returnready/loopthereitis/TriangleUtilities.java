@@ -3,18 +3,44 @@ package com.returnready.loopthereitis;
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-        return null;
+        String exp = "";
+        for(int i = 0; i < numberOfRows-1; i++) {
+            for(int j = 0; j <= i; j++){
+                exp += "*";
+            }
+            exp += "\n";
+        }
+
+        return exp;
     }
 
     public static String getRow(int numberOfStars) {
-        return null;
+        String exp = "";
+        for(int i = 0; i < numberOfStars; i++){
+            exp += "*";
+        }
+        return exp;
     }
 
     public static String getSmallTriangle() {
-        return null;
+        String exp ="";
+        for(int i = 0; i < 4; i++) {
+            for(int j = 0; j <= i; j++) {
+                exp += "*";
+            }
+            exp += "\n";
+        }
+        return exp;
     }
 
     public static String getLargeTriangle() {
-        return null;
+        String exp ="";
+        for(int i = 0; i < 9; i++) {
+            for(int j = 0; j <= i; j++) {
+                exp += "*";
+            }
+            exp += "\n";
+        }
+        return exp;
     }
 }
